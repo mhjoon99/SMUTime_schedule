@@ -179,7 +179,7 @@ public class ScheduleFragment extends Fragment {
         protected void onPreExecute() {
             try
             {
-                target = "https://duwjd20602.cafe24.com/ScheduleList.php?userID=" + URLEncoder.encode(MainActivity.userID, "UTF-8");
+                target = "https://sooowhat.cafe24.com/ScheduleList.php?userID=" + URLEncoder.encode(MainActivity.userID, "UTF-8");
             }
             catch (Exception e)
             {

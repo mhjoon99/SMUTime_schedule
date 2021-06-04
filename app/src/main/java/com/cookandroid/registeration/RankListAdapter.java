@@ -77,22 +77,7 @@ public class RankListAdapter extends BaseAdapter {
         courseTitle.setText(courseList.get(i).getCourseTitle());
         courseCredit.setText(courseList.get(i).getCourseCredit() + "학점");
         courseDivide.setText(courseList.get(i).getCourseDivide() + "분반");
-        if(courseList.get(i).getCoursePersonnel() == 0)
-        {
-            coursePersonnel.setText("인원 제한 없음");
-        }
-        else{
-            coursePersonnel.setText("제한 인원 : "+courseList.get(i).getCoursePersonnel()+"명");
-
-        }
-        if(courseList.get(i).getCourseProfessor().equals(""))
-        {
-            courseProfessor.setText("개인 연구");
-        }
-        else
-            {
-            courseProfessor.setText(courseList.get(i).getCourseProfessor()+"교수님");
-        }
+        courseProfessor.setText(courseList.get(i).getCourseProfessor()+"교수님");
         courseTime.setText(courseList.get(i).getCourseTime()+"");
         v.setTag(courseList.get(i).getCourseID());
         return v;

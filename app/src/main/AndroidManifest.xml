@@ -31,9 +31,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name = ".Pop"
-            android:theme="@style/AppTheme.Pop">
-        </activity>
     </application>
 
 </manifest>

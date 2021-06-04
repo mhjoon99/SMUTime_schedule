@@ -73,33 +73,6 @@ public class StatisticsCourseListAdapter extends BaseAdapter {
         }
         courseTitle.setText(courseList.get(i).getCourseTitle());
         courseDivide.setText(courseList.get(i).getCourseDivide() + "분반");
-
-        if(courseList.get(i).getCoursePersonnel() == 0)
-        {
-            coursePersonnel.setText("인원 제한 없음");
-            courseRate.setText("");
-        }
-        else{
-            coursePersonnel.setText("신청인원: " + courseList.get(i).getCourseRival() + "/"+ courseList.get(i).getCoursePersonnel());
-            //경쟁률 추가 부분
-            int rate = ((int) (((double) courseList.get(i).getCourseRival()*100 / courseList.get(i).getCoursePersonnel()) + 0.5));
-            courseRate.setText("경쟁률: " +rate+"%");
-            if (rate < 20){
-                courseRate.setTextColor(parent.getResources().getColor(R.color.colorSafe));
-            }
-            else if (rate <= 50){
-                courseRate.setTextColor(parent.getResources().getColor(R.color.colorPrimary));
-            }
-            else if (rate <= 100){
-                courseRate.setTextColor(parent.getResources().getColor(R.color.colorDanger));
-            }
-            else if (rate <= 150){
-                courseRate.setTextColor(parent.getResources().getColor(R.color.colorWarning));
-            }
-            else{
-                courseRate.setTextColor(parent.getResources().getColor(R.color.colorRed));
-            }
-        }
         v.setTag(courseList.get(i).getCourseID());
 
         Button deleteButton = (Button) v.findViewById(R.id.deleteButton);

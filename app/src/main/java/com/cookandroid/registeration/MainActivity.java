@@ -27,8 +27,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private ListView noticeListView;
-    private NoticeListAdapter adapter;
-    private List<Notice> noticeList;
     public static String userID;
 
     @Override
@@ -38,12 +36,6 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         userID = getIntent().getStringExtra("userID");
-
-
-        noticeListView = (ListView)findViewById(R.id.noticeListView);
-        noticeList = new ArrayList<Notice>();
-        adapter = new NoticeListAdapter(getApplicationContext(), noticeList);
-        noticeListView.setAdapter(adapter);
 
         final Button courseButton = (Button)findViewById(R.id.courseButton);
         final Button scheduleButton = (Button)findViewById(R.id.scheduleButton);
@@ -120,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
          @Override
          protected void onPreExecute() {
-             target = "https://duwjd20602.cafe24.com/NoticeList.php";
+             target = "https://sooowhat.cafe24.com/NoticeList.php";
          }
 
         @Override
@@ -153,30 +145,8 @@ public class MainActivity extends AppCompatActivity {
              super.onProgressUpdate();
          }
 
-         @Override
-         public void onPostExecute(String result) {
-             //noticeListView.setAdapter(adapter);
-             try{
-                 JSONObject jsonObject = new JSONObject(result);
-                 JSONArray jsonArray = jsonObject.getJSONArray("response");
-                 int count = 0;
-                 String noticeContent, noticeName, noticeDate;
-                 while (count < jsonArray.length())
-                 {
-                    JSONObject object = jsonArray.getJSONObject(count);
-                    noticeContent = object.getString("noticeContent");
-                    noticeName = object.getString("noticeName");
-                    noticeDate = object.getString("noticeDate");
-                    Notice notice = new Notice(noticeContent, noticeName, noticeDate);
-                    noticeList.add(notice);
-                    adapter.notifyDataSetChanged();
-                    count++;
-                 }
-             }  catch (Exception e) {
-                 e.printStackTrace();
-             }
          }
-     }
+
 
      private long lastTimeBackPressed;
 
@@ -192,8 +162,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
-
-
-
-

@@ -88,7 +88,6 @@ public class CourseFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
     private ArrayAdapter yearAdapter;
     private Spinner yearSpinner;
     private ArrayAdapter termAdapter;
@@ -98,72 +97,55 @@ public class CourseFragment extends Fragment {
     private ArrayAdapter majorAdapter;
     private Spinner majorSpinner;
 
-    private String courseUniversity = "";
-
     private ListView courseListView;
     private CourseListAdapter adapter;
     private List<Course> courseList;
-
 
     @Override
     public void onActivityCreated(Bundle b) {
         super.onActivityCreated(b);
 
-        final RadioGroup courseUniversityGroup = (RadioGroup) getView().findViewById(R.id.courseUniversityGroup);
         yearSpinner = (Spinner) getView().findViewById(R.id.yearSpinner);
         termSpinner = (Spinner) getView().findViewById(R.id.termSpinner);
         areaSpinner = (Spinner) getView().findViewById(R.id.areaSpinner);
         majorSpinner = (Spinner) getView().findViewById(R.id.majorSpinner);
 
-        courseUniversityGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        yearAdapter=ArrayAdapter.createFromResource(getActivity(),R.array.year, android.R.layout.simple_spinner_dropdown_item);
+        yearSpinner.setAdapter(yearAdapter);
 
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                RadioButton courseButton = (RadioButton) getView().findViewById(i);
-                courseUniversity = courseButton.getText().toString();
+        termAdapter=ArrayAdapter.createFromResource(getActivity(),R.array.term, android.R.layout.simple_spinner_dropdown_item);
+        termSpinner.setAdapter(termAdapter);
 
-                yearAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.year, android.R.layout.simple_spinner_dropdown_item);
-                yearSpinner.setAdapter(yearAdapter);
-                yearSpinner.setSelection(2);
 
-                termAdapter = ArrayAdapter.createFromResource(getActivity(),R.array.term, android.R.layout.simple_spinner_dropdown_item);
-                termSpinner.setAdapter(termAdapter);
-                termSpinner.setSelection(0);
-
-                if(courseUniversity.equals("학부")) {
-                    areaAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.universityArea, android.R.layout.simple_spinner_dropdown_item);
-                    areaSpinner.setAdapter(areaAdapter);
-                    majorAdapter = ArrayAdapter.createFromResource(getActivity(),R.array.universityRefinementMajor ,android.R.layout.simple_spinner_dropdown_item);
-                    majorSpinner.setAdapter(majorAdapter);
-                }
-                if(courseUniversity.equals("대학원")) {
-                    areaAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.graduateArea, android.R.layout.simple_spinner_dropdown_item);
-                    areaSpinner.setAdapter(areaAdapter);
-                    majorAdapter = ArrayAdapter.createFromResource(getActivity(),R.array.universityRefinementMajor, android.R.layout.simple_spinner_dropdown_item);
-                    majorSpinner.setAdapter(majorAdapter);
-                }
-            }
-        });
+        areaAdapter=ArrayAdapter.createFromResource(getActivity(),R.array.universityArea, android.R.layout.simple_spinner_dropdown_item);
+        areaSpinner.setAdapter(areaAdapter);
 
         areaSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if(areaSpinner.getSelectedItem().equals("교양및기타"))
+                if(areaSpinner.getSelectedItem().equals("전선"))
                 {
-                    majorAdapter = ArrayAdapter.createFromResource(getActivity(),R.array.universityRefinementMajor, android.R.layout.simple_spinner_dropdown_item);
+                    majorAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.universitymajorchoice, android.R.layout.simple_spinner_dropdown_item);
                     majorSpinner.setAdapter(majorAdapter);
                 }
-
-                if(areaSpinner.getSelectedItem().equals("전공"))
+                if(areaSpinner.getSelectedItem().equals("전심"))
                 {
-                    majorAdapter = ArrayAdapter.createFromResource(getActivity(),R.array.universityMajor, android.R.layout.simple_spinner_dropdown_item);
+                    majorAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.universitymajordeepen, android.R.layout.simple_spinner_dropdown_item);
                     majorSpinner.setAdapter(majorAdapter);
                 }
-
-                if(areaSpinner.getSelectedItem().equals("일반대학원"))
+                if(areaSpinner.getSelectedItem().equals("균교"))
                 {
-                    majorAdapter = ArrayAdapter.createFromResource(getActivity(),R.array.graduateMajor, android.R.layout.simple_spinner_dropdown_item);
+                    majorAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.universitybalancedculture, android.R.layout.simple_spinner_dropdown_item);
+                    majorSpinner.setAdapter(majorAdapter);
+                }
+                if(areaSpinner.getSelectedItem().equals("교필"))
+                {
+                    majorAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.universitynecessaryculture, android.R.layout.simple_spinner_dropdown_item);
+                    majorSpinner.setAdapter(majorAdapter);
+                }
+                if(areaSpinner.getSelectedItem().equals("일선"))
+                {
+                    majorAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.universityculturechoice, android.R.layout.simple_spinner_dropdown_item);
                     majorSpinner.setAdapter(majorAdapter);
                 }
             }
@@ -189,9 +171,6 @@ public class CourseFragment extends Fragment {
         });
     }
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -208,7 +187,7 @@ public class CourseFragment extends Fragment {
         protected void onPreExecute() {
             try
             {
-                target = "https://duwjd20602.cafe24.com/CourseList.php?courseUniversity=" + URLEncoder.encode(courseUniversity, "UTF-8") +
+                target = "https://sooowhat.cafe24.com/CourseList.php?=" +
                         "&courseYear=" + URLEncoder.encode(yearSpinner.getSelectedItem().toString().substring(0, 4), "UTF-8") + "&courseTerm=" + URLEncoder.encode(termSpinner.getSelectedItem().toString(), "UTF-8") +
                         "&courseArea=" + URLEncoder.encode(areaSpinner.getSelectedItem().toString(), "UTF-8") + "&courseMajor="  + URLEncoder.encode(majorSpinner.getSelectedItem().toString(), "UTF-8");
             } catch (Exception e)
@@ -240,13 +219,10 @@ public class CourseFragment extends Fragment {
             return null;
         }
 
-
-
         @Override
         public void onProgressUpdate(Void... values){
             super.onProgressUpdate();
         }
-
 
     /*
     class BackgroundTask extends AsyncTask<Void,  Void, String>
@@ -303,7 +279,6 @@ public class CourseFragment extends Fragment {
                 JSONArray jsonArray = jsonObject.getJSONArray("response");
                 int count = 0;
                 int courseID; //강의 고유 번호
-                String courseUniversity; //학부 혹은 대학원
                 int courseYear; //해당 년도
                 String courseTerm; //해당 학기
                 String courseArea; //강의 영역
@@ -312,15 +287,12 @@ public class CourseFragment extends Fragment {
                 String courseTitle; //강의 제목
                 int courseCredit; //강의 학점
                 int courseDivide; //강의 분반
-                int coursePersonnel; //강의 제한 인원
                 String courseProfessor; //강의 교수
                 String courseTime; //강의 시간대
                 String courseRoom; //강의실
-                int courseRival; //강의 경쟁자 수
                 while(count < jsonArray.length()){
                     JSONObject object = jsonArray.getJSONObject(count);
                     courseID = object.getInt("courseID");
-                    courseUniversity = object.getString("courseUniversity");
                     courseYear = object.getInt("courseYear");
                     courseTerm = object.getString("courseTerm");
                     courseArea = object.getString("courseArea");
@@ -329,11 +301,10 @@ public class CourseFragment extends Fragment {
                     courseTitle = object.getString("courseTitle");
                     courseCredit = object.getInt("courseCredit");
                     courseDivide = object.getInt("courseDivide");
-                    coursePersonnel = object.getInt("coursePersonnel");
                     courseProfessor = object.getString("courseProfessor");
                     courseTime = object.getString("courseTime");
                     courseRoom = object.getString("courseRoom");
-                    Course course = new Course(courseID, courseUniversity, courseYear, courseTerm, courseArea, courseMajor, courseGrade, courseTitle, courseCredit, courseDivide, coursePersonnel, courseProfessor, courseTime, courseRoom);
+                    Course course = new Course(courseID, courseYear, courseTerm, courseArea, courseMajor, courseGrade, courseTitle, courseCredit, courseDivide, courseProfessor, courseTime, courseRoom);
                     courseList.add(course);
                     count++;
                 }

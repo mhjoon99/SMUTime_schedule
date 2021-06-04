@@ -3,7 +3,6 @@ package com.cookandroid.registeration;
 public class Course {
 
     int courseID; //강의 고유 번호
-    String courseUniversity; //학부 혹은 대학원
     int courseYear; //해당 년도
     String courseTerm; //해당 학기
     String courseArea; //강의 영역
@@ -12,13 +11,12 @@ public class Course {
     String courseTitle; //강의 제목
     int courseCredit; //강의 학점
     int courseDivide; //강의 분반
-    int coursePersonnel; //강의 제한 인원
     String courseProfessor; //강의 교수
     String courseTime; //강의 시간대
     String courseRoom; //강의실
-    int courseRival; //강의 경쟁자 수
 
-
+    public Course(int courseID, int courseYear, String courseTerm, String courseArea, String courseMajor, String courseGrade, String courseTitle, int courseCredit, int courseDivide, String courseProfessor, String courseTime, String courseRoom) {
+    }
 
     public int getCourseID() {
         return courseID;
@@ -26,14 +24,6 @@ public class Course {
 
     public void setCourseID(int courseID) {
         this.courseID = courseID;
-    }
-
-    public String getCourseUniversity() {
-        return courseUniversity;
-    }
-
-    public void setCourseUniversity(String courseUniversity) {
-        this.courseUniversity = courseUniversity;
     }
 
     public int getCourseYear() {
@@ -100,14 +90,6 @@ public class Course {
         this.courseDivide = courseDivide;
     }
 
-    public int getCoursePersonnel() {
-        return coursePersonnel;
-    }
-
-    public void setCoursePersonnel(int coursePersonnel) {
-        this.coursePersonnel = coursePersonnel;
-    }
-
     public String getCourseProfessor() {
         return courseProfessor;
     }
@@ -132,47 +114,33 @@ public class Course {
         this.courseRoom = courseRoom;
     }
 
-    public Course(int courseID, String courseTitle, int courseDivide,String courseGrade,  int coursePersonnel, int courseRival) {
-        this.courseID = courseID;
+    public Course(int courseID, String term, String area, int courseCredit, int courseDivide) {
+        this.courseID = this.courseID;
         this.courseTitle = courseTitle;
         this.courseDivide = courseDivide;
         this.courseGrade = courseGrade;
-        this.coursePersonnel = coursePersonnel;
-        this.courseRival = courseRival;
     }
-    public Course(int courseID, String courseTitle, int courseDivide,String courseGrade,  int coursePersonnel, int courseRival, int courseCredit) {
+    public Course(int courseID, String courseTitle, int courseDivide, String courseGrade, int courseCredit) {
         this.courseID = courseID;
         this.courseTitle = courseTitle;
         this.courseDivide = courseDivide;
         this.courseGrade = courseGrade;
-        this.coursePersonnel = coursePersonnel;
-        this.courseRival = courseRival;
         this.courseCredit = courseCredit;
     }
      
     // courseTime과 courseProfesser 위치 바꿔줌
-    public Course(int courseID, String courseGrade, String courseTitle, int courseCredit, int courseDivide, int coursePersonnel, String courseProfessor, String courseTime) {
+    public Course(int courseID, String courseGrade, String courseTitle, int courseCredit, int courseDivide, String courseProfessor, String courseTime) {
         this.courseID = courseID;
         this.courseGrade = courseGrade;
         this.courseTitle = courseTitle;
         this.courseCredit = courseCredit;
         this.courseDivide = courseDivide;
-        this.coursePersonnel = coursePersonnel;
         this.courseProfessor = courseProfessor;
         this.courseTime = courseTime;
     }
 
-    public int getCourseRival() {
-        return courseRival;
-    }
-
-    public void setCourseRival(int courseRival) {
-        this.courseRival = courseRival;
-    }
-
-    public Course(int courseID, String courseUniversity, int courseYear, String courseTerm, String courseArea, String courseMajor, String courseGrade, String courseTitle, int courseCredit, int courseDivide, int coursePersonnel, String courseProfessor, String courseTime, String courseRoom) {
+    public Course(int courseID, int courseYear, String courseTerm, String courseArea, String courseMajor, String courseGrade, String courseTitle, int courseCredit, int courseDivide, int coursePersonnel, String courseProfessor, String courseTime, String courseRoom) {
         this.courseID = courseID;
-        this.courseUniversity = courseUniversity;
         this.courseYear = courseYear;
         this.courseTerm = courseTerm;
         this.courseArea = courseArea;
@@ -181,7 +149,6 @@ public class Course {
         this.courseTitle = courseTitle;
         this.courseCredit = courseCredit;
         this.courseDivide = courseDivide;
-        this.coursePersonnel = coursePersonnel;
         this.courseProfessor = courseProfessor;
         this.courseTime = courseTime;
         this.courseRoom = courseRoom;

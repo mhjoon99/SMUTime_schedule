@@ -85,21 +85,7 @@ public class CourseListAdapter extends BaseAdapter {
         courseTitle.setText(courseList.get(i).getCourseTitle());
         courseCredit.setText(courseList.get(i).getCourseCredit() + "학점");
         courseDivide.setText(courseList.get(i).getCourseDivide() + "분반");
-        if(courseList.get(i).getCoursePersonnel() == 0)
-        {
-            coursePersonnel.setText("인원 제한 없음");
-        }
-        else{
-            coursePersonnel.setText("제한 인원: " + courseList.get(i).getCoursePersonnel() + "명");
-        }
-        if(courseList.get(i).getCourseProfessor().equals(""))
-        {
-            courseProfessor.setText("개인 연구");
-        }
-        else
-        {
-            courseProfessor.setText(courseList.get(i).getCourseProfessor() +"교수님");
-        }
+        courseProfessor.setText(courseList.get(i).getCourseProfessor() +"교수님");
         courseTime.setText(courseList.get(i).getCourseTime() + "");
 
         v.setTag(courseList.get(i).getCourseID());
@@ -168,7 +154,6 @@ public class CourseListAdapter extends BaseAdapter {
                     queue.add(addRequest);
                 }
 
-
                 else {
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
 
@@ -218,7 +203,7 @@ public class CourseListAdapter extends BaseAdapter {
         protected void onPreExecute() {
             try
             {
-                target = "https://duwjd20602.cafe24.com/ScheduleList.php?userID=" + URLEncoder.encode(userID, "UTF-8");
+                target = "https://sooowhat.cafe24.com/ScheduleList.php?userID=" + URLEncoder.encode(userID, "UTF-8");
             }
             catch (Exception e)
             {
@@ -248,8 +233,6 @@ public class CourseListAdapter extends BaseAdapter {
             }
             return null;
         }
-
-
 
         @Override
         public void onProgressUpdate(Void... values){
@@ -283,7 +266,6 @@ public class CourseListAdapter extends BaseAdapter {
             }
         }
     }
-
 
     public boolean alreadyIn(List<Integer> courseIDList, int item)
     {
