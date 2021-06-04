@@ -6,13 +6,13 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d883b64c-2c1f-4403-aec7-11200ec12a41" name="Default Changelist" comment="">
+    <list default="true" id="d883b64c-2c1f-4403-aec7-11200ec12a41" name="Default Changelist" comment="firebase error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/AddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/AddRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RegisterActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/ValidateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/ValidateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/admin1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/splash_img.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
     </list>
@@ -159,26 +159,47 @@
       <option name="project" value="LOCAL" />
       <updated>1622792415162</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Can register only sangmyung students">
+      <created>1622794870145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622794870145</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Thread splash sangmyung logo" />
     <MESSAGE value="linked firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="linked firebase" />
+    <MESSAGE value="Can register only sangmyung students" />
+    <MESSAGE value="firebase error" />
+    <option name="LAST_COMMIT_MESSAGE" value="firebase error" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="0" key="CommitChangelistDialog2" timestamp="1622792414060">
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1622814313645">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1622792414060" />
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622814313645" />
+    <state x="100" y="100" width="1336" height="624" key="AVDManager" timestamp="1622817995687">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="100" y="100" width="1336" height="624" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1622817995687" />
+    <state x="347" y="0" key="CommitChangelistDialog2" timestamp="1622816519322">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1622816519322" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1622817273287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622817273287" />
     <state x="637" y="309" key="Github.ShareDialog" timestamp="1622791182841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="637" y="309" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1622791182841" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622792419127">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622794873679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622792419127" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622794873679" />
   </component>
 </project>

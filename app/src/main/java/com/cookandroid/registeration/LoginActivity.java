@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        final EditText idText = (EditText)findViewById(R.id.emailText);
+        final EditText idText = (EditText)findViewById(R.id.idText);
         final EditText passwordText = (EditText)findViewById(R.id.passwordText);
         final Button loginButton = (Button) findViewById(R.id.loginButton);
 
