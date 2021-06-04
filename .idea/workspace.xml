@@ -18,46 +18,31 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0a2f7e-d6cd-451c-a486-ceccf5622a54" name="Default Changelist" comment="soulxTimeTable almost final until presentation day">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6d0a2f7e-d6cd-451c-a486-ceccf5622a54" name="Default Changelist" comment="for hyejoon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/AddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/AddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/CourseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/CourseFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/CourseListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/CourseListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/DeleteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/DeleteRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/Notice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/NoticeListAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/Pop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RankListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RankListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/ScheduleFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/ScheduleFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/StatisticsCourseListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/StatisticsCourseListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/StatisticsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/StatisticsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/ValidateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cookandroid/registeration/ValidateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/emblem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/cal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_course.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/notice.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/pop.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -185,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614236999175</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="for hyejoon">
+      <created>1622787776475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622787776475</updated>
+    </task>
+    <task id="LOCAL-00005" summary="for hyejoon">
+      <created>1622788028861</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622788028861</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,7 +203,8 @@
     <MESSAGE value="soulxTimeTable almost final" />
     <MESSAGE value="soulxTimeTable almost final" />
     <MESSAGE value="soulxTimeTable almost final" />
-    <option name="LAST_COMMIT_MESSAGE" value="soulxTimeTable almost final" />
+    <MESSAGE value="for hyejoon" />
+    <option name="LAST_COMMIT_MESSAGE" value="for hyejoon" />
   </component>
   <component name="WindowStateProjectService">
     <state x="271" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622786902147">
@@ -215,19 +215,19 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614237118574" />
-    <state x="592" y="207" key="FileChooserDialogImpl" timestamp="1622627945938">
+    <state x="592" y="207" key="FileChooserDialogImpl" timestamp="1622788796466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1180" y="261" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614576854603" />
-    <state x="592" y="207" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622627945938" />
+    <state x="592" y="207" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622788796466" />
     <state x="-1202" y="418" key="GitRewordDialog" timestamp="1614237226521">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1202" y="418" key="GitRewordDialog/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614237226521" />
-    <state x="637" y="309" key="Github.ShareDialog" timestamp="1622784632672">
+    <state x="637" y="309" key="Github.ShareDialog" timestamp="1622789345558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="637" y="309" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1622784632672" />
+    <state x="637" y="309" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1622789345558" />
     <state width="1192" height="210" key="GridCell.Tab.0.bottom" timestamp="1622647181589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -249,10 +249,10 @@
     </state>
     <state x="-1459" y="164" key="SettingsEditor/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614576831076" />
     <state x="397" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622320756042" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622784639014">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622788034841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622784639014" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622788034841" />
     <state x="-1130" y="311" key="svn.repositoryBrowser" timestamp="1614576167758">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
