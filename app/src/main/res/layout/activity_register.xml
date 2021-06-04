@@ -52,7 +52,7 @@
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_person_black_24dp"
                     android:drawableLeft="@drawable/ic_person_black_24dp"
-                    android:hint="이메일"
+                    android:hint="아이디"
                     android:inputType="textEmailAddress"
                     android:padding="10dp"
                     android:textColor="#ffffff"
@@ -87,7 +87,7 @@
                 android:textColorHint="#ffffff" />
 
             <EditText
-                android:id="@+id/pwdCheckText"
+                android:id="@+id/emailText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -95,7 +95,7 @@
                 android:background="@color/colorPrimary"
                 android:drawableStart="@drawable/ic_https_black_24dp"
                 android:drawableLeft="@drawable/ic_https_black_24dp"
-                android:hint="비밀번호 확인"
+                android:hint="이메일"
                 android:padding="10dp"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff" />
