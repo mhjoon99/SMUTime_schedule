@@ -35,7 +35,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/idText"
+                android:id="@+id/emailText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

@@ -11,10 +11,10 @@ public class AddRequest extends StringRequest {
     final static private String URL = "https://sooowhat.cafe24.com/CourseAdd.php";
     private Map<String, String> parameters;
 
-    public AddRequest(String userID, String courseID, String Priority, Response.Listener<String> listener){
+    public AddRequest(String userEmail, String courseID, String Priority, Response.Listener<String> listener){
         super(Method.POST, URL, listener, null);
         parameters = new HashMap<>();
-        parameters.put("userID", userID);
+        parameters.put("userEmail", userEmail);
         parameters.put("courseID", courseID);
         parameters.put("Priority", Priority);
     }

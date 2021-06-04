@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -22,7 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private ArrayAdapter adapter;
     private Spinner spinner;
-    private String userID;
+    //private String userID;
     private String userPassword;
     private String userGender;
     private String userMajor;
@@ -39,9 +40,9 @@ public class RegisterActivity extends AppCompatActivity {
         adapter = ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-        final EditText idText = (EditText)findViewById(R.id.idText);
-        final EditText passwordText = (EditText)findViewById(R.id.passwordText);
         final EditText emailText = (EditText)findViewById(R.id.emailText);
+        final EditText passwordText = (EditText)findViewById(R.id.passwordText);
+        final EditText pwdCheckText = (EditText)findViewById(R.id.pwdCheckText);
 
         RadioGroup genderGroup = (RadioGroup)findViewById(R.id.genderGroup);
         int genderGroupID = genderGroup.getCheckedRadioButtonId();
@@ -61,13 +62,25 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String userID = idText.getText().toString();
+                String userEmail = emailText.getText().toString();
                 if(validate){
                     return;
                 }
-                if(userID.equals("")){
+                if(userEmail.isEmpty()){
                     AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
-                    dialog = builder.setMessage("아이디는 빈 칸일 수 없습니다.")
+                    dialog = builder.setMessage("이메일은 빈 칸일 수 없습니다.")
+                            .setPositiveButton("확인",null).create();
+                    dialog.show();
+                    return;
+                }else if (!Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                    dialog = builder.setMessage("이메일 형식이 맞지 않습니다.")
+                            .setPositiveButton("확인",null).create();
+                    dialog.show();
+                    return;
+                }else if (!userEmail.contains("@sangmyung.kr")){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+                    dialog = builder.setMessage("상명대학교 웹메일로 입력해주세요.")
                             .setPositiveButton("확인",null).create();
                     dialog.show();
                     return;
@@ -84,9 +97,9 @@ public class RegisterActivity extends AppCompatActivity {
                                 dialog = builder.setMessage("사용할 수 있는 아이디입니다.")
                                         .setPositiveButton("확인",null).create();
                                 dialog.show();
-                                idText.setEnabled(false);
+                                emailText.setEnabled(false);
                                 validate = true;
-                                idText.setBackgroundColor(getResources().getColor(R.color.colorGray));
+                                emailText.setBackgroundColor(getResources().getColor(R.color.colorGray));
                                 validateButton.setBackgroundColor(getResources().getColor(R.color.colorGray));
                             }
                             else{
@@ -101,7 +114,7 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 };
-                ValidateRequest validateRequest = new ValidateRequest(userID, responseListener);
+                ValidateRequest validateRequest = new ValidateRequest(userEmail, responseListener);
                 RequestQueue queue  = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(validateRequest);
             }
@@ -112,10 +125,10 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String userID = idText.getText().toString();
+                String userEmail = emailText.getText().toString();
                 String userPassword = passwordText.getText().toString();
                 String userMajor = spinner.getSelectedItem().toString();
-                String userEmail = emailText.getText().toString();
+                //String userEmail = emailText.getText().toString();
 
                 if(!validate){
                     AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
@@ -125,7 +138,7 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-                if(userID.equals("") || userPassword.equals("") || userMajor.equals("") || userEmail.equals("") || userGender.equals("")){
+                if(userEmail.isEmpty() || userPassword.isEmpty() || userMajor.isEmpty() || userGender.isEmpty()){
                     AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                     dialog = builder.setMessage("빈 칸 없이 입력해주세요.")
                             .setNegativeButton("확인",null).create();
@@ -159,7 +172,7 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 };
-                RegisterRequest registerRequest = new RegisterRequest(userID, userPassword, userGender, userMajor, userEmail, responseListener);
+                RegisterRequest registerRequest = new RegisterRequest(userEmail, userPassword, userGender, userMajor, responseListener);
                 RequestQueue queue  = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
             }

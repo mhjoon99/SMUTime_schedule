@@ -44,7 +44,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/idText"
+                    android:id="@+id/emailText"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -52,7 +52,8 @@
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_person_black_24dp"
                     android:drawableLeft="@drawable/ic_person_black_24dp"
-                    android:hint="아이디"
+                    android:hint="이메일"
+                    android:inputType="textEmailAddress"
                     android:padding="10dp"
                     android:textColor="#ffffff"
                     android:textColorHint="#ffffff" />
@@ -62,7 +63,7 @@
                     android:layout_width="80dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:background="@color/colorWarning"
+                    android:background="@color/colorPrimaryDark"
                     android:text="중복체크"
                     android:textColor="#ffffff"
                     android:textSize="15dp"
@@ -86,15 +87,15 @@
                 android:textColorHint="#ffffff" />
 
             <EditText
-                android:id="@+id/emailText"
+                android:id="@+id/pwdCheckText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@color/colorPrimary"
-                android:drawableStart="@drawable/ic_mail_outline_black_24dp"
-                android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
-                android:hint="이메일"
+                android:drawableStart="@drawable/ic_https_black_24dp"
+                android:drawableLeft="@drawable/ic_https_black_24dp"
+                android:hint="비밀번호 확인"
                 android:padding="10dp"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff" />
