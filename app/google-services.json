@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973357827895",
+    "project_id": "registeration-3b202",
+    "storage_bucket": "registeration-3b202.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973357827895:android:918da7d581b825b3583cb2",
+        "android_client_info": {
+          "package_name": "com.cookandroid.registeration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973357827895-jthu0pq1e8mc851jift4n7uf5b7pq5vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBblAhT_h92eyiq-GITqHk-UDQsimrbmzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973357827895-jthu0pq1e8mc851jift4n7uf5b7pq5vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

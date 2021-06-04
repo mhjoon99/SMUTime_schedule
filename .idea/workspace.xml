@@ -7,21 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d883b64c-2c1f-4403-aec7-11200ec12a41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sangmyung.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splashscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splashscreen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -129,20 +125,39 @@
       <option name="presentableId" value="Default" />
       <updated>1622790693578</updated>
     </task>
+    <task id="LOCAL-00001" summary="Thread splash sangmyung logo">
+      <created>1622791393831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622791393831</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Thread splash sangmyung logo">
+      <created>1622791488966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622791488966</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Thread splash sangmyung logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thread splash sangmyung logo" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="0" key="CommitChangelistDialog2" timestamp="1622791392461">
+    <state x="347" y="0" key="CommitChangelistDialog2" timestamp="1622791487894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1622791392461" />
+    <state x="347" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1622791487894" />
     <state x="637" y="309" key="Github.ShareDialog" timestamp="1622791182841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="637" y="309" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1622791182841" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622791407789">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622791728058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622791407789" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622791728058" />
   </component>
 </project>
